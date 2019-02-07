@@ -7,7 +7,7 @@ int Foo(bool isBar)
     else
         return 0;
 
-    int a=	0;
+    int a=  0;
     int b=   a;
 
 
@@ -22,15 +22,16 @@ int Foo(bool isBar)
         b,
         c);
     switch(a ) {
-    case 1:
-        break;
-    case 2 :
-        break;
-    case   3:
-        break ;
-    default: {
-        break;
+        case 1:
+            break;
+        case 2 :
+            break;
+        case   3:
+            break ;
+        default: {
+            break;
+        }
     }
-    }
+
 }
 

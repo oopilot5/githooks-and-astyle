@@ -21,7 +21,7 @@ int c=0;
 		log(ERROR,"%s %d %s",
 					a,
 					b,
-					c);
+					c); 
     switch(a )
     {
         case 1:
