@@ -1,0 +1,12 @@
+#!/bin/bash
+array=`git diff-index --name-only HEAD`
+
+for name in ${array}
+do
+    extension=${name##*.}
+    if [[ ${extension} == "c" || ${extension} == "h" || ${extension} == "cpp" || ${extension} == "hpp" || ${extension} == "cxx" || ${extension} == "hxx" ]]
+    then
+        astyle --style=stroustrup -c -S --quiet --suffix=none ${name}
+        git add ${name}
+    fi
+done
