@@ -5,7 +5,7 @@ int Foo(bool isBar)
         bar();
         return 1;  
         }
-    else 
+    else
           return 0;
 
     int a=	0;
